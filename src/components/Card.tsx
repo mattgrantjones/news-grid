@@ -83,7 +83,7 @@ const Card: React.FC<Card> = ({ type, position, article }) => {
       {/** Hero Image for "Hero" Article, shown to the right of text content */}
       {type === "hero" && !!article.image && (
         <div
-          className="flex-grow w-full h-80"
+          className="flex-grow w-full h-80 lg:h-full"
           style={{
             backgroundImage: `url("${imageURL}")`,
             backgroundSize: "cover",
